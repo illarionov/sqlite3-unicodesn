@@ -19,6 +19,7 @@
 #if defined(SQLITE_ENABLE_FTS3) || defined(SQLITE_ENABLE_FTS4)
 
 #include <assert.h>
+#include "fts3Int.h"
 
 /*
 ** Return true if the argument corresponds to a unicode codepoint

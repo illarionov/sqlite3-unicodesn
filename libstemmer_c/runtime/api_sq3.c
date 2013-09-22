@@ -5,7 +5,7 @@
 #include "header.h"
 
 static void *local_calloc(size_t nmemb, size_t size) {
-   void *p = sqlite3_malloc(nmemb*size);
+   void *p = sqlite3_malloc((int)(nmemb*size));
    if (p == NULL)
       return NULL;
    return memset(p, 0, nmemb*size);
