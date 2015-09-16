@@ -5,7 +5,11 @@
 
 #define TOKENIZER_NAME	"unicodesn"
 
+#ifdef _MSC_VER
+#define UNICODE0_DLL_EXPORTED __declspec(dllexport)
+#else
 #define UNICODE0_DLL_EXPORTED __attribute__((__visibility__("default")))
+#endif
 
 struct sqlite3_api_routines;
 
