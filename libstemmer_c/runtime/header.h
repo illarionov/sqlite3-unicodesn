@@ -1,3 +1,5 @@
+#ifndef HEADER_H
+#define HEADER_H
 
 #include <limits.h>
 
@@ -56,3 +58,4 @@ extern symbol * assign_to(struct SN_env * z, symbol * p);
 
 extern void debug(struct SN_env * z, int number, int line_count);
 
+#endif //HEADER_H

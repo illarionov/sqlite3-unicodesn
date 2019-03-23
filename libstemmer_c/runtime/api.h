@@ -1,3 +1,5 @@
+#ifndef API_H
+#define API_H
 
 typedef unsigned char symbol;
 
@@ -24,3 +26,4 @@ extern void SN_close_env(struct SN_env * z, int S_size);
 
 extern int SN_set_current(struct SN_env * z, int size, const symbol * s);
 
+#endif //API_H
